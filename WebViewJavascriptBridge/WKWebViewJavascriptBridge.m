@@ -147,6 +147,7 @@
             [_base logUnkownMessage:url];
         }
         decisionHandler(WKNavigationActionPolicyCancel);
+        return;2017.10.17
     }
     
     if (strongDelegate && [strongDelegate respondsToSelector:@selector(webView:decidePolicyForNavigationAction:decisionHandler:)]) {
